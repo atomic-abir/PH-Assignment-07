@@ -1,12 +1,7 @@
 import React from 'react';
 import './TaskStatus.css';
 
-/**
- * Component to display tasks that are currently in progress and those that
- * have been resolved. Each in‑progress task includes a "Complete" button
- * that triggers the provided onComplete callback when clicked. Resolved
- * tasks are displayed below without any actions.
- */
+
 function TaskStatus({ tasks, resolved, onComplete }) {
   return (
     <aside className="taskStatus">

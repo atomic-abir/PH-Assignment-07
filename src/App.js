@@ -8,19 +8,12 @@ import ticketsData from './data/tickets';
 import { toast } from 'react-toastify';
 import './App.css';
 
-/**
- * Root component of the Customer Support Zone application. It holds
- * application state for available tickets, tasks currently in progress
- * and resolved tasks. Provides handlers for moving tickets between
- * these states and renders the overall page layout.
- */
+
 function App() {
-  // Maintain a single collection of tickets in state. Each ticket has a
-  // status field that can be 'OPEN', 'IN_PROGRESS', or 'RESOLVED'.
+ 
   const [tickets, setTickets] = useState(ticketsData);
 
-  // Mark a ticket as in progress. If the ticket is already in progress or
-  // resolved, show an informational toast. Otherwise update its status.
+
   const handleSelectTicket = (ticket) => {
     if (ticket.status === 'IN_PROGRESS') {
       toast.info('Ticket is already in progress.');
@@ -38,9 +31,7 @@ function App() {
     toast.success('Ticket added to Task Status');
   };
 
-  // Mark a task as resolved by updating its status. Once resolved, it will
-  // no longer appear in the customer tickets list and will be shown in
-  // the resolved section of the TaskStatus component.
+  
   const handleCompleteTask = (taskId) => {
     setTickets((prev) =>
       prev.map((t) =>
@@ -50,7 +41,7 @@ function App() {
     toast.success('Task marked as resolved');
   };
 
-  // Creates a new dummy ticket and adds it to the tickets collection.
+
   const handleNewTicket = () => {
     // Compute next id from all existing ticket IDs
     const allIds = tickets.map((t) => Number(t.id));

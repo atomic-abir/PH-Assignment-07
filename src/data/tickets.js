@@ -1,7 +1,4 @@
-// Initial set of mock tickets used by the application. Each ticket
-// includes basic information such as id, title, description, customer
-// name, priority level, status, and a creation date. This data is
-// intended to simulate what might be returned from a backend service.
+
 
 const tickets = [
   {

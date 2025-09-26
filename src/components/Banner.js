@@ -1,12 +1,7 @@
 import React from 'react';
 import './Banner.css';
 
-/**
- * Banner component displays high level statistics at the top of the page.
- * It contains two panels showing the number of tickets that are currently
- * in progress and those that have been resolved. The panels use
- * contrasting gradient backgrounds to differentiate the states.
- */
+
 function Banner({ inProgressCount, resolvedCount }) {
   return (
     <section className="banner">

@@ -1,12 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 
-/**
- * Top navigation bar for the application. Displays the site title on the
- * left and a series of menu items with a call‑to‑action button on the right.
- * Accepts an optional onNewTicket callback that is invoked when the
- * "New Ticket" button is clicked.
- */
+
 function Navbar({ onNewTicket }) {
   return (
     <nav className="navbar">

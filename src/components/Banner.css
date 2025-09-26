@@ -19,27 +19,19 @@
   overflow: hidden;
 }
 
-/*
- * Each banner card uses a layered background consisting of our custom
- * wavy-line overlay and a coloured gradient.  The overlay sits on top of
- * the gradient to reproduce the appearance from the Figma design.
- *
- * NOTE: We import the wavy pattern from the src/assets folder. When
- * referenced with a relative path in CSS modules, the build system will
- * correctly resolve and copy the asset into the final bundle.
- */
+
 
 .banner__card--inProgress {
-  /* The first background image is the white wavy pattern; the second is the gradient. */
-  background-image: url('../assets/vector1.png'), url('../assets/vector2.png'), linear-gradient(140deg, #8a3ffc 0%, #5e2ab5 100%);
+
+  background-image: url('../assets/vector1.png'), url('../assets/vector2.png'), linear-gradient(140deg, #8c43fb 0%, #411d80 100%);
  background-size: contain, contain, cover;
 background-repeat: no-repeat, no-repeat, no-repeat;
 background-position: left, right, center;
 }
 
 .banner__card--resolved {
-  /* Apply the same wavy pattern on top of the green gradient. */
-  background-image: url('../assets/vector1.png'), url('../assets/vector2.png'), linear-gradient(140deg, #34d399 0%, #059669 100%);
+
+  background-image: url('../assets/vector1.png'), url('../assets/vector2.png'), linear-gradient(140deg, #34c892 0%, #046a4a 100%);
  background-size: contain, contain, cover;
 background-repeat: no-repeat, no-repeat, no-repeat;
 background-position: left, right, center;
