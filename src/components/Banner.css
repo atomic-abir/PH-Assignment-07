@@ -20,7 +20,7 @@
 }
 
 
-
+/* banner */
 .banner__card--inProgress {
 
   background-image: url('../assets/vector1.png'), url('../assets/vector2.png'), linear-gradient(140deg, #8c43fb 0%, #411d80 100%);
