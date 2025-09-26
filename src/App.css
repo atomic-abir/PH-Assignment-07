@@ -1,0 +1,48 @@
+/* Core page layout and responsiveness */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f5f6f7;
+}
+
+.app__main {
+  flex: 1;
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.tickets {
+  flex: 2;
+}
+
+.tickets__heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.tickets__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.tickets__empty {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .app__main {
+    flex-direction: column;
+  }
+  .tickets__grid {
+    grid-template-columns: 1fr;
+  }
+}

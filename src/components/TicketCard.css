@@ -1,0 +1,151 @@
+/* Styles for individual ticket cards */
+
+.ticketCard {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  height: 100%;
+}
+
+.ticketCard:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.ticketCard__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ticketCard__title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+  flex: 1;
+  margin-right: 0.5rem;
+}
+
+/* Status pill with colored dot */
+.ticketCard__status {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.6rem;
+  border-radius: 9999px;
+  text-transform: capitalize;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.ticketCard__status::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+/* Status colors */
+.ticketCard__status--open {
+  background-color: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+}
+
+.ticketCard__status--open::before {
+  background-color: #22c55e;
+}
+
+.ticketCard__status--in_progress {
+  background-color: rgba(245, 158, 11, 0.16);
+  color: #f59e0b;
+}
+
+.ticketCard__status--in_progress::before {
+  background-color: #f59e0b;
+}
+
+.ticketCard__status--resolved {
+  background-color: rgba(59, 130, 246, 0.15);
+  color: #3b82f6;
+}
+
+.ticketCard__status--resolved::before {
+  background-color: #3b82f6;
+}
+
+.ticketCard__description {
+  font-size: 0.85rem;
+  color: #4b5563;
+  line-height: 1.25;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* Footer layout */
+.ticketCard__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-top: 0.5rem;
+}
+
+/* Rows for metadata */
+.ticketCard__metaRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+/* ID */
+.ticketCard__id {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* Priority label */
+.ticketCard__priority {
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.ticketCard__priority--high {
+  color: #ef4444;
+}
+
+.ticketCard__priority--medium {
+  color: #f59e0b;
+}
+
+.ticketCard__priority--low {
+  color: #22c55e;
+}
+
+/* Customer name */
+.ticketCard__customer {
+  color: #374151;
+  font-weight: 500;
+}
+
+/* Date */
+.ticketCard__date {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.ticketCard__dateIcon {
+  font-size: 0.85rem;
+}

@@ -1,0 +1,94 @@
+/* Styles for the task status sidebar */
+
+.taskStatus {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: fit-content;
+}
+
+.taskStatus__heading {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+
+.taskStatus__heading--resolved {
+  margin-top: 0.5rem;
+}
+
+/* Lists for tasks and resolved items */
+.taskStatus__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+}
+.taskStatus__resolvedList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Individual task cards and their elements */
+.taskStatus__card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.taskStatus__taskTitle {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #374151;
+  margin: 0;
+}
+
+.taskStatus__completeButton {
+  background-color: #22c55e;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 100%;
+}
+
+.taskStatus__completeButton:hover {
+  background-color: #16a34a;
+}
+
+.taskStatus__empty {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.taskStatus__resolvedItem {
+  font-size: 0.85rem;
+  color: #374151;
+  padding: 0.4rem 0.6rem;
+  background-color: #f3f4f6;
+  border-radius: 6px;
+}
+
+@media (max-width: 1024px) {
+  .taskStatus {
+    margin-top: 2rem;
+  }
+}

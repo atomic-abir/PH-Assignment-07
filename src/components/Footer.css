@@ -1,0 +1,75 @@
+/* Styles for the page footer */
+
+.footer {
+  background-color: #0f172a;
+  color: #f3f4f6;
+  padding: 2rem 1.5rem;
+  margin-top: auto;
+}
+
+.footer__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.footer__text {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+
+.footer__subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.footer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #d1d5db;
+}
+
+.footer__list li {
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.footer__list a {
+  color: #d1d5db;
+  font-size: 0.85rem;
+  transition: color 0.2s ease;
+}
+
+.footer__list a:hover {
+  color: #ffffff;
+}
+
+.footer__list--social li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer__icon {
+  font-size: 1rem;
+}
+
+.footer__bottom {
+  border-top: 1px solid #1f2937;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #6b7280;
+}

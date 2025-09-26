@@ -1,0 +1,69 @@
+/* Styles for the statistics banner */
+
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.banner__card {
+  position: relative;
+  height: 140px;
+  border-radius: 12px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/*
+ * Each banner card uses a layered background consisting of our custom
+ * wavy-line overlay and a coloured gradient.  The overlay sits on top of
+ * the gradient to reproduce the appearance from the Figma design.
+ *
+ * NOTE: We import the wavy pattern from the src/assets folder. When
+ * referenced with a relative path in CSS modules, the build system will
+ * correctly resolve and copy the asset into the final bundle.
+ */
+
+.banner__card--inProgress {
+  /* The first background image is the white wavy pattern; the second is the gradient. */
+  background-image: url('../assets/vector1.png'), url('../assets/vector2.png'), linear-gradient(140deg, #8a3ffc 0%, #5e2ab5 100%);
+ background-size: contain, contain, cover;
+background-repeat: no-repeat, no-repeat, no-repeat;
+background-position: left, right, center;
+}
+
+.banner__card--resolved {
+  /* Apply the same wavy pattern on top of the green gradient. */
+  background-image: url('../assets/vector1.png'), url('../assets/vector2.png'), linear-gradient(140deg, #34d399 0%, #059669 100%);
+ background-size: contain, contain, cover;
+background-repeat: no-repeat, no-repeat, no-repeat;
+background-position: left, right, center;
+}
+
+.banner__title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.banner__count {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    grid-template-columns: 1fr;
+  }
+  .banner__card {
+    height: 120px;
+  }
+  .banner__count {
+    font-size: 2rem;
+  }
+}
