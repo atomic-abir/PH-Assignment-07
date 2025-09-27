@@ -10,9 +10,7 @@ function Footer() {
         <div className="footer__column">
           <h4 className="footer__title">CS — Ticket System</h4>
           <p className="footer__text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s.
+            Thank you for choosing CS — Ticket System! We’re here to help with any support needs you may have. Reach out to us anytime via email or social media.
           </p>
         </div>
 
